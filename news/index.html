@@ -1,283 +1,298 @@
 <!doctype html>
 <html>
 
-<head>
-  <meta name="viewport" content="width=device-width">
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>Wallace House News | Knight-Wallace Fellowships for Jouranlists and the Livingston Awards</title>
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Wallace House News | Knight-Wallace Fellowships for Jouranlists and the Livingston Awards</title>
 
-  <style>
-    /* -------------------------------------
-    GLOBAL
-    ------------------------------------- */
-    
-    * {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    
-    html,
-    body {
-      -webkit-font-smoothing: antialiased;
-      height: 100%;
-      -webkit-text-size-adjust: none;
-      width: 100% !important;
-      font-size: 12px;
-    }
-    
-    table {
-      width: 100%;
-    }
-    /* -------------------------------------
-    TYPOGRAPHY
-    ------------------------------------- */
-    
-    h1,
-    h2,
-    h3,
-    h1 a {
-      color: #00274c;
-      font-family: Arial, sans-serif;
-      font-weight: 800;
-    }
-    
-    h1 {
-      font-size: 18px;
-      margin: 7px 0 10px;
-    }
-    
-    h2 {
-      font-size: 16px;
-      margin: 0 0 10px;
-    }
-    
-    h3 {
-      font-size: 14px;
-      margin: 0 0 10px;
-    }
-    
-    a {
-      text-decoration: none;
-      color: #0d57aa;
-      font-weight: 800;
-    }
-    
-    p,
-    ul,
-    ol,
-    span {
-      color: #555555;
-      font-size: 12px;
-      font-family: Arial, sans-serif;
-      font-weight: normal;
-      line-height: 1.3;
-      margin-bottom: 10px;
-    }
-    
-    .img,
-    .img img,
-    p img {
-      max-width: 600px;
-      width: 100%;
-      height: auto !important;
-      max-height: 180px;
-    }
-    /* -------------------------------------
-    HEADER
-    ------------------------------------- */
-    
-    table.header-wrap {
-      clear: both !important;
-      width: 100%;
-      text-align: center;
-    }
-    /* -------------------------------------
-    CONTENT
-    ------------------------------------- */
-    
-    table.body-wrap {
-      width: 100%;
-    }
-    
-    .date {
-      font-size: 12px;
-      color: #00274c;
-      text-transform: uppercase;
-      margin-top: 15px;
-      margin-bottom: 15px;
-      font-weight: normal;
-    }
-    
-    .post {
-      margin-bottom: 50px;
-    }
-    
-    .post p {
-      font-size: 12px;
-      margin: 10px 0 15px;
-      color: #555555;
-    }
-    /* -------------------------------------
-    FOOTER
-    ------------------------------------- */
-    
-    .social {
-      border-top: 1px solid #c4c4c4;
-      padding-top: 35px;
-      padding-bottom: 25px;
-    }
-    
-    .social a {
-      margin: 0 10px;
-    }
-    
-    table.footer-wrap {
-      clear: both !important;
-      width: 100%;
-    }
-    
-    table.footer-wrap .content {
-      padding: 30px 50px;
-    }
-    
-    table.footer-wrap p,
-    table.footer-wrap strong,
-    table.footer-wrap a {
-      color: #555555;
-      font-family: Arial, sans-serif;
-      font-size: 12px;
-      margin-bottom: 10px;
-    }
-    /* ---------------------------------------------------
-    RESPONSIVENESS
-    ------------------------------------------------------ */
-    
-    .container {
-      clear: both !important;
-      display: block !important;
-      margin: 0 auto !important;
-      max-width: 600px !important;
-    }
-    
-    .content {
-      display: block;
-      margin: 0 auto;
-      max-width: 500px;
-      width: 100%;
-      padding: 0 50px;
-    }
-  </style>
-</head>
+        <style>
+        /* -------------------------------------
+        GLOBAL
+        ------------------------------------- */
 
-<body bgcolor="#FFFFFF">
-  <table class="header-wrap" bgcolor="#00355F">
-    <tr>
-      <td>
-        <img src="header.png" alt="Wallce House News" class="img" width="600" />
-      </td>
-    </tr>
-  </table>
+        * {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        }
 
-  <table class="body-wrap" bgcolor="#FFFFFF">
-    <tr>
-      <td class="container" bgcolor="#FFFFFF">
-        <div class="content">
-          <table>
-            <tr>
-              <td>
-                <h3 class="date">
-                  <strong>
-                    <currentmonthname>
-                  </strong>
-                  <currentyear>
-                </h3>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <repeater>
-                  <div class="post">
-                    <img editable src="knight-section.png" width="500" label='Category Image' />
-                    <h1>
-                      <singleline label="Title" repeatertitle='true'>Title</singleline>
-                    </h1>
-                    <img editable src="http://dummyimage.com/500x180/" width="500" label='Article Image' />
-                    <p>
-                      <multiline label="Article Body">Enter the full text. Read more link needs to be created manually.
-                        <p><a href="#">Read More &raquo;</a></p>
-                      </multiline>
-                    </p>
-                  </div>
-                </repeater>
-              </td>
-            </tr>
-            <tr align="center">
-              <td>
-                <div class="social">
-                  <a href="#">
-                    <img src="social-icon.jpg" width="27" />
-                  </a>
-                  <a href="#">
-                    <img src="social-icon.jpg" width="27" />
-                  </a>
-                  <a href="#">
-                    <img src="social-icon.jpg" width="27" />
-                  </a>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <p>
-                  <em>
-                    <multiline label="About Wallace House">Wallace House at the University of Michigan is home to the Knight-Wallace Fellowships and the Livingston Awards. The two programs recognize exceptional journalists for their work, leadership and potential. Located in Ann Arbor, Michigan,
-                      on the University campus, Wallace House is a place for community, sharing knowledge, gaining inspiration and fostering excellence in journalism.</multiline>
-                  </em>
-                </p>
-                <br />
-                <br />
-              </td>
-            </tr>
-          </table>
-        </div>
-      </td>
-    </tr>
-  </table>
+        html,
+        body {
+        -webkit-font-smoothing: antialiased;
+        height: 100%;
+        -webkit-text-size-adjust: none;
+        width: 100% !important;
+        font-size: 12px;
+        }
 
-  <table class="footer-wrap" bgcolor="#c4c4c4">
-    <tr>
-      <td bgcolor="#c4c4c4">
-        <div class="content">
-          <table>
+        table {
+        width: 100%;
+        }
+        /* -------------------------------------
+        TYPOGRAPHY
+        ------------------------------------- */
+
+        h1,
+        h2,
+        h3,
+        h1 a {
+        color: #00274c;
+        font-family: Arial, sans-serif;
+        font-weight: 800;
+        }
+
+        h1 {
+        font-size: 18px;
+        margin: 7px 0 10px;
+        }
+
+        h2 {
+        font-size: 16px;
+        margin: 0 0 10px;
+        }
+
+        h3 {
+        font-size: 14px;
+        margin: 0 0 10px;
+        }
+
+        a {
+        text-decoration: none;
+        color: #0d57aa;
+        font-weight: 800;
+        }
+
+        p,
+        ul,
+        ol,
+        span {
+        color: #555555;
+        font-size: 12px;
+        font-family: Arial, sans-serif;
+        font-weight: normal;
+        line-height: 1.3;
+        margin-bottom: 10px;
+        }
+
+
+        /* -------------------------------------
+        HEADER
+        ------------------------------------- */
+
+        table.header-wrap {
+        clear: both !important;
+        width: 100%;
+        text-align: center;
+        }
+
+
+        /* -------------------------------------
+        CONTENT
+        ------------------------------------- */
+
+        table.body-wrap {
+        width: 100%;
+        }
+
+        .body-wrap .img,
+        .body-wrap .img,
+        .body-wrap p .img, .header-wrap img {
+        max-width: 600px;
+        width: 100%;
+        height: auto !important;
+        max-height: 180px;
+        }
+
+        .date {
+        font-size: 12px;
+        color: #00274c;
+        text-transform: uppercase;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-weight: normal;
+        }
+
+        .post {
+        margin-bottom: 50px;
+        }
+
+        .post p {
+        font-size: 12px;
+        margin: 10px 0 15px;
+        color: #555555;
+        }
+        /* -------------------------------------
+        FOOTER
+        ------------------------------------- */
+
+        .social {
+        border-top: 1px solid #c4c4c4;
+        padding-top: 35px;
+        padding-bottom: 25px;
+        }
+
+        .social a {
+        margin: 0 10px;
+        }
+
+        table.footer-wrap {
+        clear: both !important;
+        width: 100%;
+        }
+
+        .footer-logo {
+        max-width: 227px;
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        }
+
+        table.footer-wrap .content {
+        padding: 30px 20px;
+        }
+
+        .footer-wrap hr { border-bottom: none; }
+
+        table.footer-wrap p,
+        table.footer-wrap strong,
+        table.footer-wrap a {
+        color: #555555;
+        font-family: Arial, sans-serif;
+        font-size: 12px;
+        margin-bottom: 10px;
+        }
+        /* ---------------------------------------------------
+        RESPONSIVENESS
+        ------------------------------------------------------ */
+
+        .container {
+        clear: both !important;
+        display: block !important;
+        margin: 0 auto !important;
+        max-width: 600px !important;
+        }
+
+        .content {
+        display: block;
+        margin: 0 auto;
+        max-width: 500px;
+        padding: 0 20px;
+        }
+        </style>
+    </head>
+
+    <body bgcolor="#FFFFFF">
+        <table class="header-wrap" bgcolor="#00355F">
             <tr>
-              <td valign="top">
-                <a href="#">
-                  <img src="um-logo.png" width="64" />
-                </a>
-              </td>
-              <td>
-                <p>
-                  <strong>Wallace House at the University of Michigan</strong>
-                  <br /> 620 Oxford Road
-                  <br /> Ann Arbor, Michigan 48104
-                  <br />Phone: (734) 998-7666
-                  <br />Email: <a href="mailto:info@wallacehouse.umich.edu">info@wallacehouse.umich.edu</a>
-                </p>
-                <p>Home of the Knight-Wallace Fellowships for Journalism
-                  <br /> and the Livingston Awards</p>
-                <p>
-                  <unsubscribe>Unsubscribe</unsubscribe> &nbsp;|&nbsp;
-                  <forwardtoafriend>Forward to a friend</forwardtoafriend> &nbsp;|&nbsp;
-                  <webversion>View as webpage</webversion>
-                </p>
-              </td>
+                <td>
+                    <img src="header.png" alt="Wallce House News" class="img" width="600" />
+                </td>
             </tr>
-          </table>
-        </div>
-      </td>
-    </tr>
-  </table>
-</body>
+        </table>
+
+        <table class="body-wrap" bgcolor="#FFFFFF">
+            <tr>
+                <td class="container" bgcolor="#FFFFFF">
+                    <div class="content">
+                        <table>
+                            <tr>
+                                <td>
+                                    <h3 class="date">
+                                    <strong>
+                                    <currentmonthname>
+                                    </strong>
+                                    <currentyear>
+                                    </h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <repeater>
+                                    <div class="post">
+                                        <img editable src="knight-section.png" class="img" width="500" label='Category Image' />
+                                        <h1>
+                                        <singleline label="Title" repeatertitle='true'>Title</singleline>
+                                        </h1>
+                                        <img editable src="http://dummyimage.com/500x180/" class="img" width="500" label='Article Image' />
+                                        <p>
+                                            <multiline label="Article Body">Enter the full text. Read more link needs to be created manually.
+                                            <p><a href="#">Read More &raquo;</a></p>
+                                            </multiline>
+                                        </p>
+                                    </div>
+                                    </repeater>
+                                </td>
+                            </tr>
+                            <tr align="center">
+                                <td>
+                                    <div class="social">
+                                        <a href="#">
+                                            <img src="flickr.png" width="27" />
+                                        </a>
+                                        <a href="#">
+                                            <img src="instagram.png"  width="27" />
+                                        </a>
+                                        <a href="#">
+                                            <img src="youtube.png"  width="27" />
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <table class="footer-wrap" bgcolor="#c4c4c4">
+            <tr>
+                <td bgcolor="#c4c4c4">
+                    <div class="content">
+                        <table>
+                            <tr>
+                                <td valign="top">
+                                    <a href="#">
+                                        <img src="wallace-logo-footer.png" class="footer-logo" width="227" />
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>
+                                        <em>
+                                        <multiline label="About Wallace House">Wallace House at the University of Michigan is home to the Knight-Wallace Fellowships and the Livingston Awards. The two programs recognize exceptional journalists for their work, leadership and potential. Located in Ann Arbor, Michigan,
+                                        on the University campus, Wallace House is a place for community, sharing knowledge, gaining inspiration and fostering excellence in journalism.</multiline>
+                                        </em>
+                                    </p>
+                                    <br /><hr /><br /><br />
+                                </td>
+                            </tr>
+
+                            <tr>
+
+                                <td>
+                                    <p>
+                                        <strong>Wallace House at the University of Michigan</strong>
+                                        <br /> 620 Oxford Road
+                                        <br /> Ann Arbor, Michigan 48104
+                                        <br />Phone: (734) 998-7666
+                                        <br />Email: <a href="mailto:info@wallacehouse.umich.edu">info@wallacehouse.umich.edu</a>
+                                    </p>
+                                    <p>Home of the Knight-Wallace Fellowships for Journalism
+                                    <br /> and the Livingston Awards</p>
+                                    <p>
+                                        <unsubscribe>Unsubscribe</unsubscribe> &nbsp;|&nbsp;
+                                        <forwardtoafriend>Forward to a friend</forwardtoafriend> &nbsp;|&nbsp;
+                                        <webversion>View as webpage</webversion>
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </body>
 
 </html>
