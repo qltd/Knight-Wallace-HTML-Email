@@ -37,8 +37,7 @@
 
         h1,
         h2,
-        h3,
-        h1 a {
+        h3 {
         color: #000000;
         font-family: Arial, sans-serif;
         font-weight: 800;
@@ -61,14 +60,12 @@
 
         a {
         text-decoration: none;
-        color: #ffffff;
-        font-weight: 800;
+        font-weight: normal;
         }
 
         p,
         ul,
-        ol,
-        span {
+        ol {
         color: #000000;
         font-size: 12px;
         font-family: Arial, sans-serif;
@@ -86,9 +83,8 @@
         display: block !important;
         margin: 0 auto !important;
         max-width: 500px !important;
-        padding: 30px 50px;
+        padding: 30px 20px;
         }
-
         .content {
         display: block;
         margin: 0 auto;
@@ -113,10 +109,11 @@
             font-weight: normal;
         }
 
-        .header-wrap a {
+        .header-wrap h2 a, .header-wrap h2 {
             font-size: 16px;
             font-weight: normal;
             font-style: italic;
+            color: #ffffff;
         }
 
 
@@ -129,6 +126,11 @@
         padding-bottom: 30px;
         }
 
+        .body-wrap .container {
+            padding: 0 50px;
+        }
+
+
         .img {
         max-width: 600px;
         width: 100%;
@@ -136,42 +138,56 @@
         }
 
         .post {
+        margin-top: -10px;
         padding: 30px 0;
-        border-top: 2px solid #000000;
-        }
-
-        .post:first-child {
-            border-top: none;
-            padding-top: 0;
+        border-top: 1px solid #000;
+        text-align: center;
         }
 
         .post h1 {
             font-size: 32px;
             margin-bottom: 20px;
+            color: #000000;
         }
 
         .post h2 {
             font-size: 22px;
             font-weight: normal;
             margin-bottom: 20px;
+            color: #000000;
+            text-align: center;
+        }
+
+        .post h2 a {
+            color: #000000;
+            font-size: 22px;
+            font-weight: normal;
         }
 
         .post p {
-        font-size: 13px;
+        font-size: 14px;
         margin: 10px 0 15px;
         color: #000000;
+        text-align: center;
         }
 
-        .post p.details {
-            color: #88714c;
+        .post p a {
+            color: #000000;
+            font-size: 14px;
+        }
+
+        .post .details, .post .details em, .post .details span, .post .details p, .post .details a {
+            color: #808080;
+            font-size: 14px;
             font-style: italic;
         }
 
-        .button {
+        .button a {
             background: #88714c;
             color: #ffffff;
             font-size: 16px;
             padding: 15px 30px;
+            font-weight: bold;
         }
 
         /* -------------------------------------
@@ -185,14 +201,21 @@
 
 
         table.footer-wrap p,
-        table.footer-wrap strong,
-        table.footer-wrap a {
+        table.footer-wrap strong, table.footer-wrap a {
         color: #000000;
         font-family: Arial, sans-serif;
-        font-size: 14px;
+        font-size: 12px;
         color: #4d4d4d;
         margin-bottom: 15px;
         }
+
+        table.footer-wrap .unsub-links a {
+            color: #808080;
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            font-weight: normal;
+        }
+
 
         </style>
     </head>
@@ -202,7 +225,7 @@
             <tr>
                 <td class="container" bgcolor="#88714c">
                     <h1><singleline label="Header Title">You are invited to our special events in honor of <strong>Charles R. Eisendrath</strong>, who is retiring this summer.</singleline></h1>
-                    <a href="#"><singleline label="RSVP Link Text">Your RSVP is required for admittance to the reception and dinner or brunch events.</singleline></a><br /><br />
+                    <h2><singleline label="RSVP Link Text"><a href="#">Your RSVP is required for admittance to the reception and dinner or brunch events.</a></singleline></h2>
                 </td>
             </tr>
         </table>
@@ -225,19 +248,19 @@
                                     <repeater>
                                     <div class="post">
                                         <h1><singleline label="Title" repeatertitle='true'>Panel Discussion</singleline></h1>
-                                        <h2>Friday, April 15<br /> 6:30 PM</h2>
+                                        <h2><singleline label="Date">Friday, April 15</singleline><br /><singleline label="Time">6:30 PM</singleline></h2>
                                         <p>
                                             <multiline label="Address">620 Oxford Road, Ann Arbor<br /> North Campus Research Complex</multiline>
                                         </p>
-                                        <p class="details">
+                                        <div class="details">
                                             <multiline label="Details">Families are welcome.</multiline>
-                                        </p>
+                                        </div>
                                     </div>
                                     </repeater>
                                 </td>
                             </tr>
                             <tr>
-                                <td><a href="#" class="button">RSVP here</a></td>
+                                <td><h2 class="button"><singleline title="RSVP Button"><a href="#">RSVP here</a></singleline></h2></td>
                             </tr>
                         </table>
                     </div>
@@ -283,7 +306,7 @@
                                             Book by March 15, 2016</p>
                                         </multiline>
                                     </p>
-                                     <p>
+                                     <p class="unsub-links">
                                         <unsubscribe>Unsubscribe</unsubscribe> &nbsp;|&nbsp;
                                         <forwardtoafriend>Forward to a friend</forwardtoafriend> &nbsp;|&nbsp;
                                         <webversion>View as webpage</webversion>
@@ -294,7 +317,9 @@
                     </div>
                 </td>
             </tr>
-            <tr>
+        </table>
+        <table bgcolor="#00274c">
+         <tr>
                 <td bgcolor="#00274c">
                     <table>
                             <tr align="center">
